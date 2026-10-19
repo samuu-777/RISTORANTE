@@ -3,6 +3,20 @@
 <head>
     <title>ESERCITAZIONE</title>
     <meta charset="utf-8">
+<style>
+    h1 {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 64px;
+        font-weight: 400;
+        color: #A67C3D;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+</style>
+
+
+    
+</style>
     <style>
         body {
             margin: 0;
@@ -15,18 +29,92 @@
             color: #ffffff;
             font-family: 'Montserrat', sans-serif;
         }
+
+        /* Stili per la barra superiore scura */
+        .navbar {
+            background-color: #2b080c; /* Sfondo scuro */
+            display: flex; /* Attiva il layout Flexbox per allineare gli elementi in riga.*/
+            justify-content: space-between; 
+            align-items: center;
+            padding: 15px 40px;
+        }
+
+        .logo {
+            color: #d4af37;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+
+        .nav-links a:hover {
+            color: #d4af37;
+        }
+
+        .btn-prenota {
+            background-color: #d4af37;
+            color: #2b080c;
+            padding: 8px 18px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
     </style>
 </head>
 <body>
 
-    <h1>IL PANZONE</h1>
+    <!-- BARRA SUPERIORE SCURA -->
+    <header class="navbar">
+        <div class="logo">
+            TRATTORIA RISTORANTE<br>
+            <strong>IL PANZONE</strong>
+        </div>
 
-    <div align="center" style="padding:4px;">
-        <span style="background-color:orange; border:2px solid black; padding:4px; width:150px; display:inline-block;"><a href="#">HOME</a></span>
-        <span style="background-color:orange; border:2px solid black; padding:4px; width:150px; display:inline-block;"><a href="#">CHI SIAMO</a></span>
-        <span style="background-color:orange; border:2px solid black; padding:4px; width:150px; display:inline-block;"><a href="#">DOVE SIAMO</a></span>
-        <span style="background-color:orange; border:2px solid black; padding:4px; width:150px; display:inline-block;"><a href="#">CONTATTI</a></span>
-    </div>
+        <div class="nav-right">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Chi Siamo</a></li>
+                <li><a href="#">Eventi</a></li>
+                <li><a href="#">Contatti</a></li>
+            </ul>
+            <a href="#" class="btn-prenota">📅 Prenota</a>
+        </div>
+    </header>
+<h1 style="margin-left: 40px; font-weight: bold;">BENVENUTI NEL<br>GUSTO AUTENTICO</h1>
+
+<img src="carbonara.jpg" alt="Descrizione dell'immagine" style="width: 600px; height: auto; float: right; margin-left: 20px; margin-right: 60px; margin-top: -110px;">
+
+
+
+<p style="margin-left: 40px;">Dalla pasta fresca fatta in casa ogni mattina alle ricette tramandate da<br> 
+generazioni. Presso la <b>Trattoria IL PANZONE</b>, ogni piatto è una<br> 
+celebrazione dell'ospitalità italiana.</p>
+
+
+
+
+
+
 
 </body>
 </html>
