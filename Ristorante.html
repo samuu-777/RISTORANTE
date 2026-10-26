@@ -13,17 +13,8 @@
         text-transform: uppercase;
     }
 </style>
-    //ho aggiunto lo stile per tutti gli h2
-<style>
-    h2 {
-       
-        font-size: 40px;
-        font-weight: 0;
-        
-        letter-spacing: 3px;
-        text-transform: uppercase;
-    }
-</style>
+
+
 <style>
     p {
         font-family: 'Helvetica', serif;
@@ -34,6 +25,19 @@
         text-transform: uppercase;
     }
 </style>
+
+
+<style>
+    h2 {
+        
+        font-size: 40px;
+        font-weight: 0;
+       
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+</style>
+
 
     
 </style>
@@ -50,6 +54,7 @@
             font-family: 'Montserrat', sans-serif;
         }
 
+
         /* Stili per la barra superiore scura */
         .navbar {
             background-color: #2b080c; /* Sfondo scuro */
@@ -59,17 +64,20 @@
             padding: 15px 40px;
         }
 
+
         .logo {
             color: #d4af37;
             font-weight: bold;
             font-size: 1.1rem;
         }
 
+
         .nav-right {
             display: flex;
             align-items: center;
             gap: 20px;
         }
+
 
         .nav-links {
             display: flex;
@@ -79,15 +87,34 @@
             gap: 20px;
         }
 
+
         .nav-links a {
             color: #ffffff;
             text-decoration: none;
             font-size: 0.95rem;
         }
 
+
         .nav-links a:hover {
             color: #d4af37;
         }
+          .nav-piatti {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 20px;
+        }
+
+
+        .nav-piatti a {
+            color: #2b080c;
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+
+
+
 
         .btn-prenota {
             background-color: #d4af37;
@@ -102,12 +129,14 @@
 </head>
 <body>
 
+
     <!-- BARRA SUPERIORE SCURA -->
     <header class="navbar">
         <div class="logo">
             TRATTORIA RISTORANTE<br>
             <strong>IL PANZONE</strong>
         </div>
+
 
         <div class="nav-right">
             <ul class="nav-links">
@@ -122,13 +151,18 @@
     </header>
 <h1 style="margin-left: 40px; font-weight: bold;">BENVENUTI NEL<br>GUSTO AUTENTICO</h1>
 
+
 <img src="carbonara.jpg" alt="Descrizione dell'immagine" style="width: 600px; height: auto; float: right; margin-left: 20px; margin-right: 60px; margin-top: -110px;">
+
+
+
 
 
 
 <p style="margin-left: 40px;">Dalla pasta fresca fatta in casa ogni mattina alle ricette<br> tramandate da 
 generazioni.<br> Presso la <b>Trattoria IL PANZONE</b>, ogni piatto è una<br> 
 celebrazione dell'ospitalità italiana.</p>
+
 
 <br>
 <br>
@@ -148,185 +182,43 @@ celebrazione dell'ospitalità italiana.</p>
     I Nostri Menù</h2>
 <div class="nav-right" style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; gap: 15px;">
     
-    <ul class="nav-links" style="display: flex; list-style: none; padding: 0; margin: 0; gap: 20px;">
+    <ul class="nav-piatti" style="display: flex; list-style: none; padding: 0; margin: 0; gap: 20px;">
         <li><a href="#" class="btn-prenota">Antipasti</a></li>
         <li><a href="#" class="btn-prenota">Primi Piatti</a></li>
         <li><a href="#" class="btn-prenota">Secondi Piatti</a></li>
         <li><a href="#" class="btn-prenota">Bevande</a></li>
     </ul>
 
-   
 
 </div>
 
 
+<div style="display: flex; align-items: center; gap: 20px;">
+  <!-- Testo a sinistra -->
+  <div style="flex: 1;">
+    <h1 style="margin-left: 40px; bold;">ANTIPASTI</h1>
+    <h3 style="margin-left: 40px; bold;">Tagliere di salumi e formaggi</h3>
+
+
+    <p>
+      UN RICCO PERCORSO TRA I SAPORI AUTENTICI DEL NOSTRO TERRITORIO. 
+      UNA SELEZIONE CURATA DI SALUMI STAGIONATI E FORMAGGI TIPICI, 
+      ACCOMPAGNATI DA OLIVE CONDITE, TARALLI FRAGRANTI, MIELE D'APE E 
+      CONFETTURE ARTIGIANALI, SERVITI CON PANE CASERECCIO APPENA AFFETTATO. 
+      IDEALE DA CONDIVIDERE!
+    </p>
+  </div>
+
+
+  
+  <div style="flex: 1;">
+    <img src="antipasto.jpg" alt="Tagliere di salumi e formaggi" style="width: 600px; height: auto; display:  block;  margin-top: 150px; margin-bottom: 10px; margin-left: auto; margin-right: auto;">
+  </div>
+</div>
+</ul>
 
 
 
-</body>
-</html>
 
-
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu del Ristorante</title>
-    <style>
-        /* Stili generali della pagina */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-        }
-
-        /* Container principale per centrare il menu */
-        .menu-container {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #ffffff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Intestazione */
-        header {
-            text-align: center;
-            border-bottom: 2px solid #e0e0e0;
-            padding-bottom: 15px;
-            margin-bottom: 25px;
-        }
-
-        h1 {
-            color: #8b0000;
-            margin: 0;
-        }
-
-        p.sub-title {
-            font-style: italic;
-            color: #666;
-            margin-top: 5px;
-        }
-
-        /* Sezioni del menu */
-        section {
-            margin-bottom: 25px;
-        }
-
-        h2 {
-            color: #444;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 5px;
-            font-size: 1.2rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        /* Liste delle pietanze */
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            display: flex;
-            justify-content: space-between;
-            padding: 8px 0;
-            border-bottom: 1px dashed #eee;
-        }
-
-        .nome-piatto {
-            font-weight: bold;
-        }
-
-        .prezzo {
-            color: #8b0000;
-            font-weight: bold;
-        }
-
-        /* Piè di pagina */
-        footer {
-            text-align: center;
-            font-size: 0.85rem;
-            color: #777;
-            margin-top: 20px;
-        }
-    </style>
-</head>
-<body>
-
-    <div class="menu-container">
-        
-        <!-- Intestazione del Ristorante -->
-        <header>
-            <h1>Ristorante Mediterraneo</h1>
-            <p class="sub-title">Menu del Giorno</p>
-        </header>
-
-        <main>
-            <!-- Sezione Antipasti -->
-            <section>
-                <h2>Antipasti</h2>
-                <ul>
-                    <li>
-                        <span class="nome-piatto">Pepata di Cozze</span>
-                        <span class="prezzo">€ 10,00</span>
-                    </li>
-                </ul>
-            </section>
-
-            <!-- Sezione Secondi Piatti -->
-            <section>
-                <h2>Secondi Piatti</h2>
-                <ul>
-                    <li>
-                        <span class="nome-piatto">Tagliata di Carne</span>
-                        <span class="prezzo">€ 18,00</span>
-                    </li>
-                    <li>
-                        <span class="nome-piatto">Arrosticini (10 pezzi)</span>
-                        <span class="prezzo">€ 12,00</span>
-                    </li>
-                    <li>
-                        <span class="nome-piatto">Bistecca Fiorentina (all'etto)</span>
-                        <span class="prezzo">€ 5,00</span>
-                    </li>
-                </ul>
-            </section>
-
-            <!-- Sezione Bevande -->
-            <section>
-                <h2>Bevande</h2>
-                <ul>
-                    <li>
-                        <span class="nome-piatto">Acqua Naturale / Frizzante 1L</span>
-                        <span class="prezzo">€ 2,50</span>
-                    </li>
-                    <li>
-                        <span class="nome-piatto">Vino Rosso della Casa (Calice)</span>
-                        <span class="prezzo">€ 4,00</span>
-                    </li>
-                    <li>
-                        <span class="nome-piatto">Bibita in lattina (33cl)</span>
-                        <span class="prezzo">€ 3,00</span>
-                    </li>
-                    <li>
-                        <span class="nome-piatto">Birra Artigianale 50cl</span>
-                        <span class="prezzo">€ 5,50</span>
-                    </li>
-                </ul>
-            </section>
-        </main>
-
-        <!-- Piè di pagina -->
-        <footer>
-            <p>Coperto e servizio inclusi - Per allergeni consultare il personale.</p>
-        </footer>
-
-    </div>
-<h1 style="margin-left: 40px; bold;" ANTIPASTI</h1>
 </body>
 </html>
