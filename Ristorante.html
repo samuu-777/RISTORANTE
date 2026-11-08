@@ -3,117 +3,7 @@
 <head>
     <title>ESERCITAZIONE</title>
     <meta charset="utf-8">
-<style>
-    h1 {
-        font-family: 'Cormorant Garamond', serif;
-        font-size: 64px;
-        font-weight: 400;
-        color: #A67C3D;
-        letter-spacing: 3px;
-        text-transform: uppercase;
-    }
-</style>
-
-<style>
-    p {
-        font-family: 'Helvetica', serif;
-        font-size: 15px;
-        font-weight: 0;
-        color: #aaaaaa;
-        letter-spacing: 3px;
-        text-transform: uppercase;
-    }
-</style>
-
-<style>
-    h2 {
-        
-        font-size: 40px;
-        font-weight: 0;
-       
-        letter-spacing: 3px;
-        text-transform: uppercase;
-    }
-</style>
-
-    
-</style>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-image: url('Sfondo_Rosso.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            color: #ffffff;
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        /* Stili per la barra superiore scura */
-        .navbar {
-            background-color: #2b080c; /* Sfondo scuro */
-            display: flex; /* Attiva il layout Flexbox per allineare gli elementi in riga.*/
-            justify-content: space-between; 
-            align-items: center;
-            padding: 15px 40px;
-        }
-
-        .logo {
-            color: #d4af37;
-            font-weight: bold;
-            font-size: 1.1rem;
-        }
-
-        .nav-right {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-
-        .nav-links {
-            display: flex;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            gap: 20px;
-        }
-
-        .nav-links a {
-            color: #ffffff;
-            text-decoration: none;
-            font-size: 0.95rem;
-        }
-
-        .nav-links a:hover {
-            color: #d4af37;
-        }
-          .nav-piatti {
-            display: flex;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            gap: 20px;
-        }
-
-        .nav-piatti a {
-            color: #2b080c;
-            text-decoration: none;
-            font-size: 0.95rem;
-        }
-
-
-        .btn-prenota {
-            background-color: #d4af37;
-            color: #2b080c;
-            padding: 8px 18px;
-            border-radius: 20px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 0.9rem;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -135,111 +25,72 @@
             <a href="#" class="btn-prenota">📅 Prenota</a>
         </div>
     </header>
-<h1 style="margin-left: 40px; font-weight: bold;">BENVENUTI NEL<br>GUSTO AUTENTICO</h1>
 
-<img src="carbonara.jpg" alt="Descrizione dell'immagine" style="width: 600px; height: auto; float: right; margin-left: 20px; margin-right: 60px; margin-top: -110px;">
+    <h1 class="main-title">BENVENUTI NEL<br>GUSTO AUTENTICO</h1>
 
+    <img src="carbonara.jpg" alt="Descrizione dell'immagine" class="main-image">
 
+    <p class="text-indent">Dalla pasta fresca fatta in casa ogni mattina alle ricette<br> tramandate da generazioni.<br> Presso la <b>Trattoria IL PANZONE</b>, ogni piatto è una<br> celebrazione dell'ospitalità italiana.</p>
 
-<p style="margin-left: 40px;">Dalla pasta fresca fatta in casa ogni mattina alle ricette<br> tramandate da 
-generazioni.<br> Presso la <b>Trattoria IL PANZONE</b>, ogni piatto è una<br> 
-celebrazione dell'ospitalità italiana.</p>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<h2 style="text-align: center;">
-    I Nostri Menù</h2>
-<div class="nav-right" style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; gap: 15px;">
+    <h2>I Nostri Menù</h2>
     
-    <ul class="nav-piatti" style="display: flex; list-style: none; padding: 0; margin: 0; gap: 20px;">
-        <li><a href="Ristorante.html" class="btn-prenota">Antipasti</a></li>
-        <li><a href="Primi Piatti.html" class="btn-prenota">Primi Piatti</a></li>
-        <li><a href="#" class="btn-prenota">Secondi Piatti</a></li>
-        <li><a href="Bevande.html" class="btn-prenota">Bevande</a></li>
-    </ul>
+    <div class="menu-container">
+        <ul class="nav-piatti">
+            <li><a href="Ristorante.html" class="btn-prenota">Antipasti</a></li>
+            <li><a href="Primi Piatti.html" class="btn-prenota">Primi Piatti</a></li>
+            <li><a href="Secondi Piatti.html" class="btn-prenota">Secondi Piatti</a></li>
+            <li><a href="Bevande.html" class="btn-prenota">Bevande</a></li>
+        </ul>
+    </div>
 
-</div>
+    <!-- SEZIONE ANTIPASTO 1 -->
+    <div class="dish-row">
+        <div class="dish-column">
+            <h1 class="main-title">ANTIPASTI</h1>
+            <h3 class="text-indent">Tagliere di salumi e formaggi</h3>
+            <p>
+                UN RICCO PERCORSO TRA I SAPORI AUTENTICI DEL NOSTRO TERRITORIO. 
+                UNA SELEZIONE CURATA DI SALUMI STAGIONATI E FORMAGGI TIPICI, 
+                ACCOMPAGNATI DA OLIVE CONDITE, TARALLI FRAGRANTI, MIELE D'APE E 
+                CONFETTURE ARTIGIANALI, SERVITI CON PANE CASERECCIO APPENA AFFETTATO. 
+                IDEALE DA CONDIVIDERE!
+            </p>
+        </div>
+        <div class="dish-column">
+            <img src="antipasto.jpg" alt="Tagliere di salumi e formaggi" class="dish-image">
+        </div>
+    </div>
+    <p>Prezzo: 15.00€</p>
 
-<div style="display: flex; align-items: center; gap: 20px;">
-  <!-- Testo a sinistra -->
-  <div style="flex: 1;">
-    <h1 style="margin-left: 40px; bold;">ANTIPASTI</h1>
-    <h3 style="margin-left: 40px; bold;">Tagliere di salumi e formaggi</h3>
+    <!-- SEZIONE ANTIPASTO 2 -->
+    <div class="dish-row">
+        <div class="dish-column">
+            <h3>Fritto misto</h3>
+            <p>
+               Un'esplosione di croccantezza e sapore per iniziare al meglio il pasto. Una ricca selezione di fritti tradizionali preparati al momento: supplì dal cuore filante, crocchette di patate dorate, verdure di stagione in pastella e olive ascolane, fritti ad arte in un'impanatura leggera e dorata. Croccanti fuori, morbidi e saporiti all'interno.
+            </p>
+        </div>
+        <div class="dish-column">
+            <img src="Fritti.jpg" alt="Fritto misto" class="dish-image">
+        </div>
+    </div>
+    <p>Prezzo: 10.00€</p>
 
-    <p>
-      UN RICCO PERCORSO TRA I SAPORI AUTENTICI DEL NOSTRO TERRITORIO. 
-      UNA SELEZIONE CURATA DI SALUMI STAGIONATI E FORMAGGI TIPICI, 
-      ACCOMPAGNATI DA OLIVE CONDITE, TARALLI FRAGRANTI, MIELE D'APE E 
-      CONFETTURE ARTIGIANALI, SERVITI CON PANE CASERECCIO APPENA AFFETTATO. 
-      IDEALE DA CONDIVIDERE!
-    </p>
-  </div>
-
-  
-  <div style="flex: 1;">
-    <img src="antipasto.jpg" alt="Tagliere di salumi e formaggi" style="width: 600px; height: auto; display:  block;  margin-top: 150px; margin-bottom: 10px; margin-left: auto; margin-right: auto;">
-  </div>
-</div>
-</ul>
-<p>Prezzo: 15.00$</p>
-
-
-
-<div style="display: flex; align-items: center; gap: 20px;">
-  <!-- Testo a sinistra -->
-  <div style="flex: 1;">
-    
-    <h3 style="margin-left: 40px; bold;">Fritto misto</h3>
-
-    <p>
-     Un'esplosione di croccantezza e sapore per iniziare al meglio il pasto. Una ricca selezione di fritti tradizionali preparati al momento: supplì dal cuore filante, crocchette di patate dorate, verdure di stagione in pastella e olive ascolane, fritti ad arte in un'impanatura leggera e dorata. Croccanti fuori, morbidi e saporiti all'interno.
-    </p>
-  </div>
-
-  
-  <div style="flex: 1;">
-    <img src="Fritti.jpg" alt="Tagliere di salumi e formaggi" style="width: 600px; height: auto; display:  block;  margin-top: 150px; margin-bottom: 10px; margin-left: auto; margin-right: auto;">
-  </div>
-</div>
-</ul>
-<p>Prezzo: 10.00$</p>
-
-
-<div style="display: flex; align-items: center; gap: 20px;">
-  <!-- Testo a sinistra -->
-  <div style="flex: 1;">
-    
-    <h3 style="margin-left: 40px; bold;">Bruschette</h3>
-
-    <p>
-    Fette di pane casereccio abbrustolite alla brace e condite con ingredienti freschi e genuini. Un assortimento goloso che comprende le classiche pomodorini freschi, basilico e aglio, quelle con paté di olive nere e scaglie di formaggio, e quelle ai funghi trifolati all'olio extravergine d'oliva. La semplicità della tradizione servita su tagliere.
-    </p>
-  </div>
-
-  
-  <div style="flex: 1;">
-    <img src="Bruschette.jpg" alt="Tagliere di salumi e formaggi" style="width: 600px; height: auto; display:  block;  margin-top: 150px; margin-bottom: 10px; margin-left: auto; margin-right: auto;">
-  </div>
-</div>
-</ul>
-<p>Prezzo: 5.00$</p>
-
-
-
-
-
+    <!-- SEZIONE ANTIPASTO 3 -->
+    <div class="dish-row">
+        <div class="dish-column">
+            <h3>Bruschette</h3>
+            <p>
+            Fette di pane casereccio abbrustolite alla brace e condite con ingredienti freschi e genuini. Un assortimento goloso che comprende le classiche pomodorini freschi, basilico e aglio, quelle con paté di olive nere e scaglie di formaggio, e quelle ai funghi trifolati all'olio extravergine d'oliva. La semplicità della tradizione servita su tagliere.
+            </p>
+        </div>
+        <div class="dish-column">
+            <img src="Bruschette.jpg" alt="Bruschette" class="dish-image">
+        </div>
+    </div>
+    <p>Prezzo: 5.00€</p>
 
 </body>
 </html>
